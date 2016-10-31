@@ -1,0 +1,27 @@
+.clr-white {
+	background-color: $clr-white;
+
+	.rte {
+
+		h1, h2, h3, h4, h5, h6, p, li {
+			color: $clr-black;
+		}
+	}
+}
+
+.clr-orange {
+	background-color: $clr-orange;
+}
+
+.clr-black {
+	background-color: $clr-black;
+
+	.rte {
+		color: #fff;
+	}
+
+	.btn-clear {
+		border: 5px solid #fff;
+		color: #fff !important;
+	}
+}

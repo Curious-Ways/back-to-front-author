@@ -1,0 +1,46 @@
+/*==============================================================
+
+Typography
+
+File: SCSS Partial (/scss/partials/_typography.scss)
+Compiled to: css/global.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Typographical elements
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+	
+/* Base links
+  -------------------------------------------------------- */
+
+a {
+	@include links-dark;
+	@include single-transition(color, 0.2s, ease-in-out, 0s);
+}
+
+
+/* Header links
+  -------------------------------------------------------- */
+
+	h1, h2, h3, h4, h5, h6 {
+		a {
+			text-decoration: none;
+		}
+	}
+
+
+/* External links
+  -------------------------------------------------------- */
+
+	.fa-external-link {
+		font-size: 80%;
+		text-decoration: underline;
+	}

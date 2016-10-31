@@ -1,0 +1,124 @@
+#submit {
+	display: none;
+}
+
+.content_comments {
+
+	&:nth-child(even) {
+		
+	}
+
+	&:nth-child(odd) {
+		
+	}	
+
+	.vcard {
+
+		text-align: center;
+		
+
+		img {
+			margin: auto;	
+			display: block;
+			clear: both;
+		}
+
+		.fn {
+
+		}
+		
+	}
+}
+
+.comment-awaiting-moderation {
+	background-color: #fff;
+	color: #000;
+	padding: 10px 10px 5px 10px;
+}
+
+.comment-author {
+	a {
+		@include links-light();
+		text-decoration: none;
+		font-weight: normal;
+	}
+}
+
+.comment {
+	&:last-child {
+		margin-bottom: 40px;
+	}
+}
+
+.rte .comment-form {
+
+	margin: 0;
+	padding: 0;
+
+	p {
+		margin: 0;
+		padding: 0;
+
+		&.comment-form-comment {
+			margin-top: $space;
+		}
+	}
+
+	label {
+		text-align: left;
+	}
+
+	a {
+		@include links-light;
+	}
+}
+
+.comment-reply-title {
+	@include title();	
+	padding: $space 0 0 0;
+	margin: 0;
+}
+
+.rte .form-submit {
+	margin: 0;
+	padding: 0;
+}
+
+.rte .comment-content p {
+	text-align: left;
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+.comment-metadata, .reply, .comments-title {
+	display: none;
+}
+
+.rte .comment-list {
+	@extend %clearfix;
+	list-style-type: none;
+	margin: 0;
+	padding: $space 0 0 0;
+}
+
+.comment-body {
+	border-bottom: 1px solid #fff;
+	padding-top: $space;
+}
+
+.rte .comment-notes {
+	max-width: 70%;
+	margin: $space auto 0 auto;
+}
+
+.submit {
+	max-width: 150px;
+	margin-top: $space;
+}
+
+.rte .comment-awaiting-moderation {
+	a {
+		@include links-dark;
+	}
+}
+

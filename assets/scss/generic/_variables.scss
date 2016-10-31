@@ -1,0 +1,76 @@
+/*==============================================================
+
+Variables
+
+File: SCSS Partial (/scss/generic/_variables.scss)
+Compiled to: css/global.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: All variables
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+/* Colors
+  -------------------------------------------------------- */ 
+
+  $clr-orange: #f45f0f; 
+  $clr-black: #0c0b06;
+  $clr-white: #fbfbfb;
+  $clr-keyline: $clr-black;
+  $clr-site-bckgrd: $clr-black;
+  $clr-error: rgb(255,0,0);
+  $clr-success: rgb(63,195,128);
+
+
+/* Base
+  -------------------------------------------------------- */
+
+  $base-clr: $clr-white;
+  $base-fnt: "freight-sans-pro",sans-serif;
+  $base-fnt-size: 18px;
+  $base-fnt-weight: 400; 
+  $base-fnt-style: normal;    
+  $base-line-height: 1.5; 
+  $space: 1em;
+
+/* Fonts
+  -------------------------------------------------------- */ 
+
+  $fnt-book: 400;
+  $fnt-semi: 600;
+  $fnt-black: 700;
+
+  // Sizes
+  @function em($target, $context: $base-fnt-size) {
+     @if $target == 0 { @return 0 }
+     @return $target / $context + 0em;
+  }
+
+  $fnt-xlrg: em(60px, 18px);
+  $fnt-lrg: em(42px, 18px);
+  $fnt-med: em(23px, 18px);
+  $fnt-reg: em(18px, 18px);
+  $fnt-sml: em(15px, 18px);
+
+
+/* Layout
+  -------------------------------------------------------- */ 
+
+  $max-width: 1155px;
+
+
+/* Breakpoints
+  -------------------------------------------------------- */
+
+  $bp-sml: "only screen and (max-width: 30em)"; // 480px
+  $bp-tab: "only screen and (min-width: 30.063em) and (max-width: 47.938em)"; // 481px and 767px
+  $bp-med: "only screen and (min-width: 48.000em) and (max-width: 63.938em)"; // 768px and 1023px
+  $bp-lrg: "only screen and (min-width: 64.000em)"; // 1024px
+
+  $bp-sml-up: "only screen and (min-width: 30.063em)"; 

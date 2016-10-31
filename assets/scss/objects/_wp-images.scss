@@ -1,0 +1,72 @@
+/*==============================================================
+
+Wordpress > Images
+
+File: SCSS Partial (/scss/objects/_wp-images.scss)
+Compiled to: css/global.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Specific to Wordpress
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Images
+  -------------------------------------------------------- */
+
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.wp-caption {
+	margin-bottom: $space;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0;
+}
+
+.wp-caption-text {
+	text-align: left;
+	font-size: 90%;
+	font-style: italic;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 5px 0 $space 0;
+}
+
+
+/* Gallery
+  -------------------------------------------------------- */
+
+.site-content .gallery {
+	margin-bottom: $space;
+}
+.gallery-caption {
+	margin: $space 0;
+}
+.site-content .gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+.site-content .gallery dd {
+	margin: 0;
+}
+.site-content .gallery-columns-4 .gallery-item {
+}
+.site-content .gallery-columns-4 .gallery-item img {
+}

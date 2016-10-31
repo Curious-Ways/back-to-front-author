@@ -1,0 +1,40 @@
+.site-footer {
+	@extend %clearfix;
+
+	text-align: center;
+	position: relative;
+
+	h4 {
+		@include title($fnt-reg);
+		text-align: left;
+	}
+
+}
+
+.secondary-navigation {
+	
+	margin: 20px auto 40px auto;
+
+	li {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: $fnt-semi;
+	}
+
+	a {
+		@include links-light;
+	}
+}
+
+.social-navigation {
+	a {
+
+		.fa-circle {
+			color: $clr-white;
+		}
+
+		.fa-stack-1x {
+			color: $clr-black;	
+		}
+	}
+}

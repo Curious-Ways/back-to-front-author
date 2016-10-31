@@ -1,0 +1,331 @@
+.content-wrapper_narrow {
+
+	.content {
+		max-width: 800px;
+	}
+}
+
+
+// All
+// ---------
+
+.entry-text_one_column{
+	//max-width: 530px;
+	margin: auto;
+	text-align: center;
+
+	.entry-title {
+		margin: 0 auto $space auto;
+		text-align: center;
+	}
+}
+
+.entry-text_two_column {
+
+}
+
+.entry-text_quote {
+	padding: 0 $space;
+
+	h2 {
+		font-size: $fnt-lrg;
+		margin-bottom: 0;
+	}
+}
+
+.entry-text_publications {
+	text-align: center;
+	
+	.entry-title {
+		margin: auto;
+		text-align: center;
+	}
+}
+
+.publication {
+
+	@media #{$bp-lrg, $bp-med} {
+		display: inline-block;
+		width: 30%;
+		margin-right: $space;
+		margin-bottom: 0;
+	}
+
+	margin-bottom: $space*2;
+	vertical-align: top;
+
+	.publication-title .entry-title {
+		@include title($fnt-lrg);
+		line-height: 1.2;
+		margin-bottom: 0;
+	}
+
+	.publication-title, .publication-text {
+		margin-bottom: $space/2;
+		text-align: center;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+	.publication-image {
+		text-align: center;
+		margin: $space auto;
+
+		img {
+			margin: 0 auto;
+		}
+	}
+
+.publications-intro { 
+	padding: $space*2 0;
+}
+
+.single .content-wrapper_narrow .publication-image {
+	img {
+		width: 100%;
+	}
+}
+
+.publication-books {
+	margin-bottom: $space*2;
+
+	.publication-image {
+		text-align: center;
+		margin: $space auto;
+
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}	
+
+	.entry-title {
+		@include header($fnt-xlrg);
+		text-align: center;
+	}	
+}
+
+
+.publication-image {
+
+}
+
+// Background image
+// ------------------
+
+	@media (max-width: 1200px) {
+		.content_background_img {
+			background-image: none !important;
+		}
+	}
+
+.content_background_img {
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+
+.content_background_img_right {
+	background-position: bottom right;	
+}
+
+.content_background_img_left {
+	background-position: bottom left;	
+} 
+
+.content {
+	position: relative;
+	z-index: 50;
+}
+
+.entry-title {
+	@include header($fnt-xlrg);
+}
+	
+// RTE
+// -------------
+
+.rte {
+
+	// Titles
+	// -------------
+
+	h1 {
+		@include header();
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: $fnt-semi;
+	}
+
+	h2, h3 {
+		line-height: 1.1;
+	}
+
+	// Links
+	// --------------
+
+	a {
+		//@include links-alt; 
+	}
+
+	// Text
+	// --------------
+	
+	p {
+		@include text;
+	}
+
+	// Lists
+	// ------------
+
+	ul, ol {
+		margin: $space;
+
+		li {
+			margin-bottom: $space/2;
+
+			// Nested list
+			ul, ol {
+				margin: $space/2 0 0 $space;
+			}
+		}
+	}
+
+
+// Facts
+// --------------
+
+	.entry-text_fact {
+		max-width: $max-width;
+		text-align: center;
+
+		.entry-title {
+
+			@media #{$bp-lrg} {
+				width: 30%;	
+				text-align: left;
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0;
+			}
+			
+		}
+	}
+
+	.fact-number-wrapper {
+
+		@media #{$bp-lrg} {
+			width: 20%;		
+			margin-right: 25px;	
+			display: inline-block;
+			vertical-align: middle;			
+		}
+		
+		
+	}
+
+	.fact-number {
+	 	background: transparent;
+	 	border: 10px solid #fff;
+	  border-radius: 50%;
+	  -moz-border-radius: 50%;
+	  -webkit-border-radius: 50%;
+	  color: #ffffff;
+	  display: inline-block;
+	  margin: 0 0 20px 0;
+	  padding: 0;
+	  line-height: 185px;
+	  text-align: center;
+	  width: 200px; 
+	  height: 200px;	
+	  font-size: $fnt-xlrg;
+	  text-transform: uppercase;
+	  font-weight: $fnt-semi;
+
+  	span {
+  		//text-decoration: underline;
+  	}  	
+
+  	@media #{$bp-lrg} {
+  		margin: 0;
+  	}
+	}
+
+
+// Quotes
+// ------------------
+
+  .quote-source, .quote-org {
+		font-size: $fnt-lrg;
+		display: inline;
+		font-weight: $fnt-semi;
+  }
+
+  .quote-speech {
+
+  }
+
+  .quote-org {
+
+  }
+
+	// Styles
+	ul {
+		list-style: disc;
+	}
+
+  ol {
+  	list-style: decimal;
+  } 
+
+  .list-highlight {
+  	counter-reset:li;
+  	margin: $space*2 0; 
+  	padding-left: 0;
+  	text-align: center;
+
+  	> li {
+  		margin-left: 0; 
+  		padding-left: 0; 
+  		list-style: none inside;
+  		margin-bottom: 35px;
+  		font-size: 130%;
+  		display: inline-block;
+
+  		&:before {
+	    	content: counter(li);
+	    	counter-increment: li;
+	    	padding: 0px;
+	    	margin-right: 15px;
+	    	background: #fff;
+	    	border-radius: 50%;
+	    	width: 40px;
+	    	display: inline-block;
+	    	text-align: center;  			
+  		}
+  	}
+  	}
+  }	
+
+  // Title + subtitle background-position: 
+  
+  .title-subtitle-group {
+
+  	text-align: center;
+
+  	.subtitle {
+  		text-transform: uppercase;
+  		font-size: $fnt-sml;
+  		margin: 0;
+  		font-weight: 300;
+  	}	
+  }
+
+
+

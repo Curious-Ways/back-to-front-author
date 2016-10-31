@@ -1,0 +1,76 @@
+/*==============================================================
+
+Global
+
+File: SCSS Partial (/scss/global.scss)
+Compiled to: css/global.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Placeholder file for all SCSS imports
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/*  Compass
+  -------------------------------------------------------- */
+
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/typography";
+@import "compass/utilities";
+
+
+/*  Generic
+  -------------------------------------------------------- */
+
+@import "generic/variables";
+@import "generic/mixins";
+@import "generic/normalize"; 
+
+
+/*  Base
+  -------------------------------------------------------- */
+
+@import "base/main";
+@import "base/global-classes";
+@import "base/interaction";
+@import "base/lists";
+@import "base/links";
+@import "base/forms";
+@import "base/media";
+@import "base/tables";
+@import "base/text";
+@import "base/headings";
+@import "base/print";
+
+
+/*  Objects
+  -------------------------------------------------------- */
+
+@import "objects/branding";
+@import "objects/navigation";
+@import "objects/layout";
+@import "objects/wp-articles";
+@import "objects/wp-images";
+@import "objects/wp-comments";
+@import "objects/wp-widgets";
+@import "objects/site-header";
+@import "objects/page-header";
+@import "objects/page-content";
+@import "objects/site-footer";
+@import "objects/plugin-magnific";
+@import "objects/banners";
+@import "objects/grids";
+@import "objects/fixes";
+@import "objects/mailchimp";
+@import "objects/buttons";
+@import "objects/colors";
+
+
+

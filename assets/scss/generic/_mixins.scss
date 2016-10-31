@@ -1,0 +1,76 @@
+/*==============================================================
+
+Mixins
+
+File: SCSS Partial (/scss/partials/_mixins.scss)
+Compiled to: css/global.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: All mixins
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Links
+  -------------------------------------------------------- */
+
+  // Light Scheme
+ 	@mixin links-light {
+ 		@include link-colors(rgb(255,255,255), darken(rgb(255,255,255), 5%), darken(rgb(255,255,255), 5%), rgb(255,255,255), darken(rgb(255,255,255), 5%))
+ 	}
+
+  // Dark Scheme
+ 	@mixin links-dark {
+ 		@include link-colors(rgb(0,0,0), lighten(rgb(0,0,0), 5%), lighten(rgb(0,0,0), 5%), rgb(0,0,0), lighten(rgb(0,0,0), 5%))
+ 	} 	
+
+  // Vertical align
+  @mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* Fades
+  -------------------------------------------------------- */ 
+
+  @mixin fade-in {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;    
+  }
+
+  @mixin title($size: $fnt-med) {
+    font-size: $size;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    text-align: center;  
+    letter-spacing: 2px;  
+  }
+
+  @mixin text($size: $fnt-reg) {
+    font-size: $size;
+    line-height: 1.3;
+    margin-bottom: $space;   
+  }
+
+
+  @mixin header($size: $fnt-xlrg) {
+    font-family: "fatfrank",sans-serif;
+    font-weight: 400;
+    font-size: $size;
+    line-height: 1.2;
+    text-align: left;  
+    letter-spacing: 2px;  
+    text-transform: uppercase;
+  }  

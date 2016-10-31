@@ -1,0 +1,41 @@
+// All
+.page-header {
+	position: relative;
+	padding: 0;
+	
+	.content {
+
+		@media (min-width: 850px) {
+			height: 700px;
+			//height: 100vh;
+		}
+	}
+} 
+
+// Content
+.page-header-content {
+	@include fade-in;
+	color: #fff;
+	max-width: 360px;
+	margin: 0;
+	text-align: left;
+	z-index: 50;
+	position: relative;
+	padding: 110px $space 25px $space; 
+
+	@media (min-width: 1200px) {
+		padding: 110px 0 25px;
+	}
+
+	@media (min-width: 850px) {
+		@include vertical-align();
+	}	
+
+	h1 {
+		@include header($fnt-xlrg);
+	}
+
+	h2 {
+		@include text($fnt-med);
+	}
+}

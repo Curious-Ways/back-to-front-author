@@ -1,0 +1,148 @@
+/*==============================================================
+
+Navigation
+
+File: SCSS Partial (/scss/partials/_navigation.scss)
+Compiled to: css/global.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Primary, secondary & tertiary navigations
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Menus
+  -------------------------------------------------------- */
+
+  nav {
+  	list-style-type: none;
+  }
+
+	.menu {
+
+		a {
+			text-decoration: none;	
+		}
+	}
+
+	.menu-inline {
+
+		> li {
+			display: inline-block;
+			margin-right: $space/4;
+			vertical-align: middle;
+			line-height: 1;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				@include links-dark;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.menu-stacked {
+
+		> li {
+			text-align: left;
+			margin-bottom: $space/3;
+			padding-bottom: $space/3;
+			position: relative;
+			line-height: 18px;
+		}
+	}
+
+	.menu-blocks {
+
+		> li {
+			float: left;
+			margin-right: $space;
+
+			&:last-child {
+				margin-right: 0;
+			}
+	
+			a {
+				@include links-dark;
+				@include inline-block;
+				@include single-transition(all, 0.2s, ease-in-out);			
+				background: $base-clr;
+				padding: $space/2 $space;		
+				text-decoration: none;	
+
+				&:hover {
+					background-color: lighten($base-clr, 20%);
+				}
+			}
+		}											
+	}
+
+
+	.menu-piped {
+
+		> li {
+			display: inline-block;
+			margin-right: $space/4;
+
+			&:last-child {
+				margin-right: 0;
+		
+				a {
+					&:after {
+						content: "";
+						padding-left: 0;
+					}
+				}
+			}
+		}
+
+		a {
+			text-decoration: none;
+
+			&:after {
+				content: " | ";
+				padding-left: $space/2;
+			}
+		}
+	}
+
+
+	.post-navigation {
+
+		.nav-links {
+
+			a {
+				background: $clr-white;
+				padding: 10px 20px;
+				@include links-light;
+				display: inline-block;
+				text-decoration: none;
+				transition: all 0.3s ease 0s;
+
+				&:hover, &:focus {
+					box-shadow: 0 0 0 5px darken($clr-white, 8%);
+				}					
+			}
+		}
+
+		.nav-previous {
+			width: 50%;
+			float: left;
+			text-align: left;
+		}
+
+		.nav-next {
+			width: 50%;
+			float: right;
+			text-align: right;
+		}		
+	}

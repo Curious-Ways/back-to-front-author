@@ -1,0 +1,77 @@
+/*==============================================================
+
+Text
+
+File: SCSS Partial (/scss/base/_text.scss)
+Compiled to: css/global.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Text styles
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Paragraphs
+  -------------------------------------------------------- */
+
+  p {
+    margin-bottom: $space;
+  } 
+
+  // Special paragraphs
+  .note {
+    font-size: $fnt-sml;
+  }
+
+
+/* Blockquotes
+  -------------------------------------------------------- */
+
+  blockquote {
+    font-style: italic;
+  }
+
+
+/* Rule
+  -------------------------------------------------------- */
+
+  hr {
+    border: 0;
+    height: 2px;
+    background: $clr-keyline;
+    margin: $space 0;
+  }
+
+
+/* Misc
+  -------------------------------------------------------- */
+  
+  address {
+    margin-bottom: $space;
+  }
+
+  abbr {
+    border-bottom: 1px dotted $clr-keyline;
+    cursor: help;
+  }
+
+  acronym {
+    font-weight: $fnt-semi; 
+    font-style: italic;
+  }
+
+  cite {
+    font-weight: $fnt-semi;
+  } 
+  
+  q {
+    font-style: italic;
+  }   
+
+

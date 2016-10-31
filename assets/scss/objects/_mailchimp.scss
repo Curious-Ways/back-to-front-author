@@ -1,0 +1,29 @@
+.mc-field-50-wrapper {
+  display: flex;
+
+	.mc-field-50 {
+	 margin-right: 10px;
+	 width: 100%;
+
+  	&:last-child {
+  		margin-right: 0;
+		}	 
+	}
+}
+
+.mc-field-group {
+	label {
+		font-size: 90%;
+		text-align: left;
+	}
+}
+
+#mc_embed_signup {
+	.btn {
+		max-width: 180px;		
+	}
+}
+
+#mc-embedded-subscribe {
+	width: auto;
+}

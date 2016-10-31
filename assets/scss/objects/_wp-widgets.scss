@@ -1,0 +1,33 @@
+/*==============================================================
+
+Wordpress > Widgets
+
+File: SCSS Partial (/scss/objects/_wp-widgets.scss)
+Compiled to: css/global.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Specific to Wordpress
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Widgets
+  -------------------------------------------------------- */
+
+.widget {
+
+	select {
+		max-width: 100%;
+	}
+
+}
+
+.widget_search .submit {
+	display: none;
+}

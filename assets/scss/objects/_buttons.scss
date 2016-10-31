@@ -1,0 +1,77 @@
+/*==============================================================
+
+Buttons
+
+File: SCSS Partial (/scss/objects/_buttons.scss)
+Compiled to: css/style.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Buttons
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Buttons
+  -------------------------------------------------------- */
+
+	%btn {
+		@include links-dark;
+		@include inline-block;
+		line-height: 1;
+		padding: 20px 25px;
+		border: 0;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all 0.3s ease 0s;
+		letter-spacing: 2px;
+		font-weight: $fnt-semi;
+	}
+
+	// Mixin
+
+	@mixin btn-theme($btn-color) {
+
+		@extend %btn;
+		background-color: $btn-color;
+
+		&:hover,
+		&:active {
+			
+		}
+	}
+
+	// Colors
+
+	%solid {
+		@include btn-theme($clr-white);
+		@include links-dark;
+	}
+
+	%clear {
+		@include btn-theme(transparent);
+		border: 3px solid $clr-black;
+		@include links-dark; 
+	}
+
+	// Buttons
+
+	.btn {
+		@extend %solid;
+	}
+
+	.btn-clear {
+		@extend %clear;
+	}
+
+	.submit {
+		@extend %solid;
+	}
+
+
