@@ -70,14 +70,36 @@
 	}
 }
 
-	.publication-image {
-		text-align: center;
-		margin: $space auto;
-
-		img {
-			margin: 0 auto;
-		}
+.publication-cover {
+	@media #{$bp-med, $bp-lrg} {	
+		width: 45%;
+		float: left;
 	}
+
+	.publication-image {
+		margin: 0;
+	}
+}
+
+.publication-image {
+	text-align: center;
+	margin: $space auto;
+
+	img {
+		margin: 0 auto;
+	}
+}
+
+.publication-details {
+	@media #{$bp-med, $bp-lrg} {	
+		width: 45%;
+		float: right;
+	}
+
+	a {
+		@include links-light;
+	}
+}
 
 .publications-intro { 
 	padding: $space*2 0;
